@@ -1,3 +1,8 @@
-# My Awesome Book
+本手册的目标是作为团队入门git、gitlab、sourcetree时的参考，同时供新入职的实习生快速上手。
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+编写的思路是从实战出发，提供了一些基本操作的流程，所以并不完备。Git博大精深，想要深入了解的小伙伴请参考相关手册。
+
+本手册基于gitbook编写，可以多人协作，如果你想为本手册添砖加瓦，欢迎联系手册的管理人员。
+
+
+
