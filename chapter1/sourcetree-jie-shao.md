@@ -36,7 +36,15 @@
 
 ![](/assets/sourcetreeemail.png)
 
-如果你欣赏命令行，可以添加一下下面相关的配置：   
+3. 规范 commit 信息
+
+![](/assets/commit.png)
+
+[http://www.ruanyifeng.com/blog/2016/01/commit\_message\_change\_log.html](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
+
+### 命令行配置
+
+如果你欣赏命令行，可以添加下面相关的配置\(添加前请确保你知道相关命令的意思\)：
 
 ```
 [user] 
