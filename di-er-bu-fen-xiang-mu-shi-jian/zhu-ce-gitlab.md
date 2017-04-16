@@ -6,5 +6,5 @@
 
 4. 在本地的电脑生成相关的 SSH key， 并添加到 GitLab
 
-
+![](/assets/ssh.png)
 
