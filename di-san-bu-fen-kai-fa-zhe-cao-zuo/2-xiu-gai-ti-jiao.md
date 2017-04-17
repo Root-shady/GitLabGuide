@@ -85,9 +85,10 @@
 
    表明：index.php已经被修改了，但是没有放入暂存区
 
-2. 单击“Stage All”（因为这里只有index.php文件，所以只能选中“Stage All”，如果修改多个文件，而只想提交部分文件的话，则在“未暂存文件”里选中需要暂存的文件，单击“Stage Selected”）。得到如下结果
-   ![](https://albertlin1102.gitbooks.io/sc_git_guide/content/assets/shotcut25.png)
+2. 单击“Stage All”（因为这里只有index.php文件，所以只能选中“Stage All”，如果修改多个文件，而只想提交部分文件的话，则在“未暂存文件”里选中需要暂存的文件，单击“Stage Selected”）。得到如下结果  
+   ![](https://albertlin1102.gitbooks.io/sc_git_guide/content/assets/shotcut25.png)  
    表明：暂存区里现在有index.php文件
+
 3. 编辑提交信息，进行提交
    ![](https://albertlin1102.gitbooks.io/sc_git_guide/content/assets/shotcut26.png)
 
