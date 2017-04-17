@@ -2,7 +2,7 @@
 
 在团队协作中，为了减小误操作带来的损失，要对一些关键的分支进行保护。保护以后，只有Master权限的用户才能对这个分支进行修改。
 
-   0. 默认的项目 master 分支是受保护的， 只有相关的成员角色是 master 才能进行分支合并操作。
+1. 默认的项目 master 分支是受保护的， 只有相关的成员角色是 master 才能进行分支合并操作。
 
 1. 登录 gitlab，进入项目页面，点击项目的"Setttings"，选择“Repository
 
@@ -10,7 +10,7 @@
 
 ![](/assets/protected.png)
 
-1. # 4 处理merge request {#4-处理merge-request}
+# 处理merge request {#4-处理merge-request}
 
 对于被保护的分支，只有Master权限的用户才能对这个分支进行修改。
 
@@ -19,6 +19,4 @@
 发送请求后，管理者可以在gitlab的merge request页面看见merge request，进行检查后拒绝或者同意就行了。
 
 ![](/assets/merge.png)
-
-
 

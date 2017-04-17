@@ -1,6 +1,6 @@
 ## Project {#project}
 
-不同角色在项目中拥有的权限： 
+不同角色在项目中拥有的权限：
 
 | Action | Guest | Reporter | Developer | Master | Owner |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -23,16 +23,16 @@
 | 创建环境 |  |  | ✓ | ✓ | ✓ |
 | 使用环境终端 |  |  |  | ✓ | ✓ |
 | 停用环境 |  |  | ✓ | ✓ | ✓ |
-| See a list of merge requests |  | ✓ | ✓ | ✓ | ✓ |
-| Manage/Accept merge requests |  |  | ✓ | ✓ | ✓ |
-| Create new merge request |  |  | ✓ | ✓ | ✓ |
-| Create new branches |  |  | ✓ | ✓ | ✓ |
+| 查看合并请求列表 |  | ✓ | ✓ | ✓ | ✓ |
+| 管理／接受合并分支 |  |  | ✓ | ✓ | ✓ |
+| 创建合并请求 |  |  | ✓ | ✓ | ✓ |
+| 创建新的分支 |  |  | ✓ | ✓ | ✓ |
 | Push to non-protected branches |  |  | ✓ | ✓ | ✓ |
 | Force push to non-protected branches |  |  | ✓ | ✓ | ✓ |
 | Remove non-protected branches |  |  | ✓ | ✓ | ✓ |
-| Add tags |  |  | ✓ | ✓ | ✓ |
-| Write a wiki |  |  | ✓ | ✓ | ✓ |
-| Cancel and retry jobs |  |  | ✓ | ✓ | ✓ |
+| 打标签 |  |  | ✓ | ✓ | ✓ |
+| 编写 wiki |  |  | ✓ | ✓ | ✓ |
+| 取消或者重试任务 |  |  | ✓ | ✓ | ✓ |
 | Create or update commit status |  |  | ✓ | ✓ | ✓ |
 | Update a container registry |  |  | ✓ | ✓ | ✓ |
 | Remove a container registry image |  |  | ✓ | ✓ | ✓ |
@@ -58,8 +58,6 @@
 | Remove protected branches[3](https://docs.gitlab.com/ee/user/permissions.html#fn3) |  |  |  |  |  |
 |  |  |  |  |  | Remove pages |
 
-
-
 ## Group {#group}
 
 Any user can remove themselves from a group, unless they are the last Owner of the group. The following table depicts the various user permission levels in a group.
@@ -72,8 +70,6 @@ Any user can remove themselves from a group, unless they are the last Owner of t
 | Create project in group |  |  |  | ✓ | ✓ |
 | Manage group members |  |  |  |  | ✓ |
 | Remove group |  |  |  |  | ✓ |
-
-
 
 ## Gitlab CI
 
@@ -98,6 +94,5 @@ The admin user can perform any action on GitLab CI in scope of the GitLab instan
 | See events in the system |  |  |  | ✓ |
 | Admin interface |  |  |  | ✓ |
 
-  
 
 

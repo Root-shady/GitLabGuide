@@ -10,7 +10,6 @@ $ git branch [branch-name]
 
 # 新建一个分支，并切换到该分支
 $ git checkout -b [branch]
-
 ```
 
 ### Sourcetree方式（推荐） {#sourcetree方式（推荐）}
