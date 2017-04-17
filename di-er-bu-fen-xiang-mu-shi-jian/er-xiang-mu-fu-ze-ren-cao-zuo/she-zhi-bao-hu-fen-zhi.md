@@ -1,10 +1,103 @@
-# 3 设置保护分支 {#3-设置保护分支}
+## Project {#project}
 
-在团队协作中，为了减小误操作带来的损失，要对一些关键的分支进行保护。保护以后，只有Master权限的用户才能对这个分支进行修改。
+不同角色在项目中拥有的权限： 
 
-1. 登录 gitlab，进入项目页面，单击修改图标，选择“Protected Branches”![](https://albertlin1102.gitbooks.io/sc_git_guide/content/assets/shotcut37.png)
+| Action | Guest | Reporter | Developer | Master | Owner |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 创建 issue | ✓ | ✓ | ✓ | ✓ | ✓ |
+| 创建可信 issue | ✓ | ✓ | ✓ | ✓ | ✓ |
+| 查看可信 issues | \(✓\)[1](https://docs.gitlab.com/ee/user/permissions.html#fn1) | ✓ | ✓ | ✓ | ✓ |
+| 评论 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| 查看后台任务 | ✓[2](https://docs.gitlab.com/ee/user/permissions.html#fn2) | ✓ | ✓ | ✓ | ✓ |
+| 查看任务日志 | ✓[2](https://docs.gitlab.com/ee/user/permissions.html#fn2) | ✓ | ✓ | ✓ | ✓ |
+| 查看下载任务生成的软件包 | ✓[2](https://docs.gitlab.com/ee/user/permissions.html#fn2) | ✓ | ✓ | ✓ | ✓ |
+| 查看 wiki 页面 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| 拉取项目代码 |  | ✓ | ✓ | ✓ | ✓ |
+| 下载项目 |  | ✓ | ✓ | ✓ | ✓ |
+| 创建代码片段 |  | ✓ | ✓ | ✓ | ✓ |
+| 管理issue 追踪器 |  | ✓ | ✓ | ✓ | ✓ |
+| 管理标签 |  | ✓ | ✓ | ✓ | ✓ |
+| 查看commit 状态 |  | ✓ | ✓ | ✓ | ✓ |
+| 查看容器或者注册机 |  | ✓ | ✓ | ✓ | ✓ |
+| 查看环境 |  | ✓ | ✓ | ✓ | ✓ |
+| 创建环境 |  |  | ✓ | ✓ | ✓ |
+| 使用环境终端 |  |  |  | ✓ | ✓ |
+| 停用环境 |  |  | ✓ | ✓ | ✓ |
+| See a list of merge requests |  | ✓ | ✓ | ✓ | ✓ |
+| Manage/Accept merge requests |  |  | ✓ | ✓ | ✓ |
+| Create new merge request |  |  | ✓ | ✓ | ✓ |
+| Create new branches |  |  | ✓ | ✓ | ✓ |
+| Push to non-protected branches |  |  | ✓ | ✓ | ✓ |
+| Force push to non-protected branches |  |  | ✓ | ✓ | ✓ |
+| Remove non-protected branches |  |  | ✓ | ✓ | ✓ |
+| Add tags |  |  | ✓ | ✓ | ✓ |
+| Write a wiki |  |  | ✓ | ✓ | ✓ |
+| Cancel and retry jobs |  |  | ✓ | ✓ | ✓ |
+| Create or update commit status |  |  | ✓ | ✓ | ✓ |
+| Update a container registry |  |  | ✓ | ✓ | ✓ |
+| Remove a container registry image |  |  | ✓ | ✓ | ✓ |
+| Create new milestones |  |  |  | ✓ | ✓ |
+| Add new team members |  |  |  | ✓ | ✓ |
+| Push to protected branches |  |  |  | ✓ | ✓ |
+| Enable/disable branch protection |  |  |  | ✓ | ✓ |
+| Turn on/off protected branch push for devs |  |  |  | ✓ | ✓ |
+| Enable/disable tag protections |  |  |  | ✓ | ✓ |
+| Rewrite/remove Git tags |  |  |  | ✓ | ✓ |
+| Edit project |  |  |  | ✓ | ✓ |
+| Add deploy keys to project |  |  |  | ✓ | ✓ |
+| Configure project hooks |  |  |  | ✓ | ✓ |
+| Manage runners |  |  |  | ✓ | ✓ |
+| Manage job triggers |  |  |  | ✓ | ✓ |
+| Manage variables |  |  |  | ✓ | ✓ |
+| Manage pages |  |  |  | ✓ | ✓ |
+| Manage pages domains and certificates |  |  |  | ✓ | ✓ |
+| Switch visibility level |  |  |  |  | ✓ |
+| Transfer project to another namespace |  |  |  |  | ✓ |
+| Remove project |  |  |  |  | ✓ |
+| Force push to protected branches[3](https://docs.gitlab.com/ee/user/permissions.html#fn3) |  |  |  |  |  |
+| Remove protected branches[3](https://docs.gitlab.com/ee/user/permissions.html#fn3) |  |  |  |  |  |
+|  |  |  |  |  | Remove pages |
 
-2. 如下图所示![](https://albertlin1102.gitbooks.io/sc_git_guide/content/assets/shotcut38.png)
 
+
+## Group {#group}
+
+Any user can remove themselves from a group, unless they are the last Owner of the group. The following table depicts the various user permission levels in a group.
+
+| Action | Guest | Reporter | Developer | Master | Owner |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Browse group | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Edit group |  |  |  |  | ✓ |
+| Create subgroup |  |  |  |  | ✓ |
+| Create project in group |  |  |  | ✓ | ✓ |
+| Manage group members |  |  |  |  | ✓ |
+| Remove group |  |  |  |  | ✓ |
+
+
+
+## Gitlab CI
+
+GitLab CI permissions rely on the role the user has in GitLab. There are four permission levels it total:
+
+* admin
+* master
+* developer
+* guest/reporter
+
+The admin user can perform any action on GitLab CI in scope of the GitLab instance and project. In addition, all admins can use the admin interface under`/admin/runners`.
+
+| Action | Guest, Reporter | Developer | Master | Admin |
+| :--- | :--- | :--- | :--- | :--- |
+| See commits and jobs | ✓ | ✓ | ✓ | ✓ |
+| Retry or cancel job |  | ✓ | ✓ | ✓ |
+| Remove project |  |  | ✓ | ✓ |
+| Create project |  |  | ✓ | ✓ |
+| Change project configuration |  |  | ✓ | ✓ |
+| Add specific runners |  |  | ✓ | ✓ |
+| Add shared runners |  |  |  | ✓ |
+| See events in the system |  |  |  | ✓ |
+| Admin interface |  |  |  | ✓ |
+
+  
 
 
