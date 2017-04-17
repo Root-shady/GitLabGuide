@@ -4,18 +4,18 @@
 
 1 访问 公司gitlab网址 并登录
 
-2. 点击左上角的 tarbar， 选定 groups 进行小组的创建，
+1. 点击左上角的 tarbar， 选定 groups 进行小组的创建，
 
 创建规范：
 
-*    \[强制\] 小组名称使用英文命名（因为在该小组命名空间下，项目仓库地址会包含小组的名称）
+* \[强制\] 小组名称使用英文命名（因为在该小组命名空间下，项目仓库地址会包含小组的名称）
 * ［建议］如果名称需要分隔，统一使用下划线。
 * ［强制］需要在小组的相关描述中，对改小组对应的项目进行中文描
 * ［建议］默认的小组 visibility 选用 internal， 即只要是系统登录的用户就可以看到
 
 ![](/assets/addgroup.png)
 
-3. 进行相关的成员添加和项目添加
+1. 进行相关的成员添加和项目添加
 
 添加规范：
 
@@ -25,9 +25,9 @@
 
 ![](/assets/members.png)
 
-4. 单击小组命名空间中的 “New Project”按钮，新建项目
+1. 单击小组命名空间中的 “New Project”按钮，新建项目
 
-创建规范 
+创建规范
 
 * ［强制］Project Name 填入项目名称 ，使用合同编号名称
 * ［建议］Project description填入项目描述，项目的相关信息
@@ -72,31 +72,27 @@ e. 把本地当前分支推送到远程仓库origin的master分支上
 
 2 这样，就成功把项目文件推送到gitlab上了，访问gitlab上的这个项目，选择Repository，就可以在gitlab上查看远程仓库的分支情况了![](https://albertlin1102.gitbooks.io/sc_git_guide/content/part2/shotcut4.png)
 
-#### 方法二 Sourcetree方式\(推荐\) {#方法二-sourcetree方式推荐}
+#### 方法二 Sourcetree方式 {#方法二-sourcetree方式推荐}
 
 1 文件——克隆/新建，选择“创建新仓库”，“目标路径”填入项目文件夹地址，点击“创建”，如下图所示
 
-![](https://albertlin1102.gitbooks.io/sc_git_guide/content/part2/shotcut5.jpg)
+![](/assets/createproject.png)
 
 2 单击“Stage All”，将项目文件夹中所有文件放入暂存区，然后编辑提交信息，进行提交，如下图所示
 
-![](https://albertlin1102.gitbooks.io/sc_git_guide/content/part2/shotcut6.png)
+![](/assets/stage.png)
 
-3 仓库——项目设置——添加
 
-![](https://albertlin1102.gitbooks.io/sc_git_guide/content/part2/shotcut7.png)
+
+3 为项目添加远程仓库， 填写相关的 “远端名称”，“URL/路径”。“远端名称”是指远程仓库在本地的名字，“URL/路径”填写仓库的ssh地址，如下图所示
+
+![](/assets/remote.png)
 
 4 分别填写“远端名称”，“URL/路径”。“远端名称”是指远程仓库在本地的名字，“URL/路径”填写仓库的ssh地址，如下图所示
 
-![](https://albertlin1102.gitbooks.io/sc_git_guide/content/part2/shotcut8.png)
+5. 进行相关的分支的推送，需要选定上传的分支
 
-5 在对应的本地仓库界面下，点击“推送”
+![](/assets/remotepush.png)
 
-![](https://albertlin1102.gitbooks.io/sc_git_guide/content/part2/shotcut9.png)
 
-6 进行推送，如下图所示
-
-![](https://albertlin1102.gitbooks.io/sc_git_guide/content/part2/shotcut10.png)
-
-7 这样就ok啦
 
