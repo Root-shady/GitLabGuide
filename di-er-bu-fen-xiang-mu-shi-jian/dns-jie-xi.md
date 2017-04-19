@@ -1,24 +1,24 @@
 # 相关配置
 
-### Gitlab 访问地址
+# Gitlab 访问地址
 
-* 内网测试服务器：[http://\*.honray.cc](http://*.honray.cc)  \(192.168.1.130\)
-* 外网测试服务器：[http://\*.honray.cc](http://*.honray.cc)  \(112.74.98.251\)
+* # 内网测试服务器：[http://\*.honray.cc](http://*.honray.cc)  \(192.168.1.130\)
+* # 外网测试服务器：[http://\*.honray.cc](http://*.honray.cc)  \(112.74.98.251\)
 
-### 文件共享服务器
+# 文件共享服务器
 
-相关的文件下载都可以在公司内部的 samba 服务器下载，相关的详细信息请查看邮件
+# 相关的文件下载都可以在公司内部的 samba 服务器下载，相关的详细信息请查看邮件
 
-* mac 下在Finder 里面找到 connect to server, 然后输入下面的地址：   smb://192.168.1.130/share
-* Window下在网络设置那里（开启设备发现功能）， 然后找到 honray-server 主机
+* # mac 下在Finder 里面找到 connect to server, 然后输入下面的地址：   smb://192.168.1.130/share
+* # Window下在网络设置那里（开启设备发现功能）， 然后找到 honray-server 主机
 
-### DNS 服务器
+# DNS 服务器
 
-### 内网访问
+# 内网访问
 
-公司本地自建 DNS 服务器，使用公司内部网络，请使用  内部服务器地址 \([http://gitlab.honray.cc](http://gitlab.honray.cc)\)。
+# 公司本地自建 DNS 服务器，使用公司内部网络，请使用  内部服务器地址 \([http://gitlab.honray.cc](http://gitlab.honray.cc)\)。
 
-检查自己电脑的 DNS 设置主 DNS 是否为：192.168.1.130, 局域网默认 DNS 则不需要改动，可以通过在命令行使用下面的命令进行检测：
+# 检查自己电脑的 DNS 设置主 DNS 是否为：192.168.1.130, 局域网默认 DNS 则不需要改动，可以通过在命令行使用下面的命令进行检测：
 
 ```
 ping gitlab.honray.cc   
